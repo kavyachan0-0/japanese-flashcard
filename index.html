@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Japanese Flashcards</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <h1>🏯Japanese Flashcards🎍</h1>
+    
+  <div class="home" id="homePage">
+    <div class="card-select" onclick="startFlashcards('hiragana')">Hiragana</div>
+    <div class="card-select" onclick="startFlashcards('katakana')">Katakana</div>
+  </div>
+
+  <div class="flashcard-container" id="flashcardPage">
+    <button class="back-button" onclick="goHome()">&#8592;</button>
+    <div class="flashcard" id="flashcard">
+      <div class="card-inner">
+        <div class="card-front" id="cardFront">あ</div>
+        <div class="card-back" id="cardBack">A - vowel</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button onclick="prevCard()">Prev</button>
+      <button onclick="nextCard()">Next</button>
+      <button onclick="toggleShuffle()" id="shuffleToggle">Shuffle: OFF</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
